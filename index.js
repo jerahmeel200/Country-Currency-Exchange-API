@@ -1,5 +1,5 @@
 const express = require('express');
-const port = 3000;
+const port = process.env.PORT || 3000;
 const app = express();
 const countriesUrl = "https://restcountries.com/v2/all?fields=name,capital,region,population,flag,currencies" 
 const exchangeUrl = "https://open.er-api.com/v6/latest/USD"
